@@ -119,56 +119,68 @@ Which in total is **160%**, not 100%. Need to normalize final value by dividing 
 
 ---
 
-### AXE Body Spray Energy Calculations
+### AXE Component Energy Content Reference
 
-#### Propane (7.5%)
-> **Source:** [NIST WebBook - Propane](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF)
-
-Has ΔcH°gas = -2219.2 ± 0.46 kJ/mol (Pittam and Pilcher, 1972). Corresponding ΔfHºgas = -104.7 kJ/mol (simple calculation by NIST; no Washburn corrections); ALS, the most updated one.
-
-**Calculation:** 2219.2 kJ/mol / 44.0956 g/mol × 1000 g/kg = 50,364 kJ/kg = 50.4 MJ/kg
-
-Using net value: **46.4 MJ/kg**
-
-**Result:** `0.075 × 46.4 = 3.48 MJ/kg`
-
-#### HFC-152a (30%)
-**Assumed energy content:** ~16.5 MJ/kg
-
-**Result:** `0.30 × 16.5 = 4.95 MJ/kg`
-
-#### Butane (35%)
-**Energy content:** 45.7 MJ/kg (net value from standard fuel tables)
-
-**Calculation:** 2219 kJ/mol / 44.1 g/mol × 1000 g/kg = 50.4 MJ/kg (gross value; net value is about 46.4 MJ/kg, matching standard fuel tables)
-
-**Result:** `0.35 × 45.7 = 15.995 MJ/kg`
-
-#### Isobutane (35%)
-**Energy content:** 45.6 MJ/kg
-
-**Result:** `0.35 × 45.6 = 15.96 MJ/kg`
-
-#### Alcohol Denat. (52.5%)
-**Energy content:** ~30 MJ/kg (estimated for denatured alcohol)
-
-**Result:** `0.525 × 30 = 15.75 MJ/kg`
+| Compound | Typical Energy Content (MJ/kg) | Source(s) |
+|----------|-------------------------------|-----------|
+| Propane | 46.4 | NIST Chemistry WebBook, Wikipedia |
+| Butane | 45.7 | NIST Chemistry WebBook, Wikipedia |
+| Isobutane | 45.6 | NIST Chemistry WebBook, Wikipedia |
+| Hydrofluorocarbon 152a | 16.5 | Standard chemical data (safety and technical datasheets) |
+| Alcohol Denat. (Ethanol) | 30 | Wikipedia, standard chemical data |
 
 ---
 
-### Total AXE Energy Calculation
+### AXE Body Spray Energy Calculations
 
-1. **Add all the results:**
-   ```
-   3.48 + 4.95 + 15.995 + 15.96 + 15.75 = 56.135 MJ/kg
-   ```
+#### Given Composition:
+- **Propane:** 7.5% (~46.4 MJ/kg)
+- **Hydrofluorocarbon 152a:** 30% (~16.5 MJ/kg)
+- **Butane:** 35% (~45.7 MJ/kg)
+- **Isobutane:** 35% (~45.6 MJ/kg)
+- **Alcohol Denat. (SD Alcohol 40-B):** 52.5% (~30 MJ/kg)
+- **Total percentages:** 160%
 
-2. **Divide by the total percentage (as a decimal):**
-   ```
-   56.135 / 1.6 = 35.08 MJ/kg
-   ```
+#### Step-by-Step Calculation
 
-**Final Result:** **~35.1 MJ/kg**
+**1. Multiply each component's percentage (as a decimal) by its energy content:**
+
+**Propane (7.5%):**
+```
+0.075 × 46.4 = 3.48 MJ/kg
+```
+
+**HFC-152a (30%):**
+```
+0.30 × 16.5 = 4.95 MJ/kg
+```
+
+**Butane (35%):**
+```
+0.35 × 45.7 = 15.995 MJ/kg
+```
+
+**Isobutane (35%):**
+```
+0.35 × 45.6 = 15.96 MJ/kg
+```
+
+**Alcohol Denat. (52.5%):**
+```
+0.525 × 30 = 15.75 MJ/kg
+```
+
+**2. Add all the results:**
+```
+3.48 + 4.95 + 15.995 + 15.96 + 15.75 = 56.135 MJ/kg
+```
+
+**3. Divide by the total percentage (as a decimal):**
+```
+56.135 / 1.6 = 35.08 MJ/kg
+```
+
+**Final Weighted Average Energy Content:** **≈ 35.1 MJ/kg**
 
 ---
 
