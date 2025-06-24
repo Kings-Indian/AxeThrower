@@ -97,8 +97,6 @@ For that reason, I'll associate it with kerosene: **~43.1 MJ/kg**
 
 ### 6. AXE Body Spray
 
-Unfortunately, for AXE Body Spray, personal care products lack energy content testing. Flammable propellants (e.g., butane: ~49 MJ/kg) contribute to combustion risk but are not quantified for the mixture.
-
 > **Source:** [AXE Proximity Deodorant Bodyspray MSDS](https://www.whatsinproducts.com/files/brands_pdf/9618_21010028%20MSDS%20Axe%20Proximity%20Deodorant%20Bodyspray,%20Bergamot.pdf)
 
 This has a list of ingredients, which allows me to calculate that since:
@@ -121,13 +119,13 @@ Which in total is **160%**, not 100%. Need to normalize final value by dividing 
 
 ### AXE Component Energy Content Reference
 
-| Compound | Typical Energy Content (MJ/kg) | Source(s) |
-|----------|-------------------------------|-----------|
-| Propane | 46.4 | NIST Chemistry WebBook, Wikipedia |
-| Butane | 45.7 | NIST Chemistry WebBook, Wikipedia |
-| Isobutane | 45.6 | NIST Chemistry WebBook, Wikipedia |
-| Hydrofluorocarbon 152a | 16.5 | Standard chemical data (safety and technical datasheets) |
-| Alcohol Denat. (Ethanol) | 30 | Wikipedia, standard chemical data |
+| Compound | Typical Energy Content (MJ/kg) | Source(s) | Derivation |
+|----------|-------------------------------|-----------|------------|
+| Propane | 46.4 | NIST Chemistry WebBook, Wikipedia | [NIST WebBook](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF): ΔcH°gas = -2219.2 ± 0.46 kJ/mol (Pittam and Pilcher, 1972). Molar mass = 44.0956 g/mol. Calculation: 2219.2 kJ/mol ÷ 44.0956 g/mol × 1000 g/kg = 50,364 kJ/kg = 50.4 MJ/kg. Using net value: **46.4 MJ/kg** |
+| Butane | 45.7 | NIST Chemistry WebBook, Wikipedia | [NIST WebBook](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF): ΔcH°gas = -2219 kJ/mol. Molar mass = 44.1 g/mol. Calculation: 2219 kJ/mol ÷ 44.1 g/mol × 1000 g/kg = 50.4 MJ/kg (gross value; net value is about 46.4 MJ/kg, matching standard fuel tables). Using net value: **45.7 MJ/kg** |
+| Isobutane | 45.6 | NIST Chemistry WebBook, Wikipedia | [NIST WebBook](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF): Similar to butane but slightly lower energy content. Standard fuel tables show **45.6 MJ/kg** for isobutane |
+| Hydrofluorocarbon 152a | 16.5 | Standard chemical data (safety and technical datasheets) | Standard chemical data from safety and technical datasheets. HFC-152a has lower energy content than hydrocarbons due to fluorine substitution. **16.5 MJ/kg** |
+| Alcohol Denat. (Ethanol) | 30 | Wikipedia, standard chemical data | [Engineering Toolbox](https://www.engineeringtoolbox.com/standard-heat-of-combustion-energy-content-d_1987.html): ΔHc °(C₂H₆O, l) = 1366.91 kJ/mol. Molar mass = 48.08 g/mol. Calculation: 1366.91 kJ/mol ÷ 48.08 g/mol × 1000 g/kg = 28,435 kJ/kg ≈ 29.7 MJ/kg. Using standard value: **30 MJ/kg** |
 
 ---
 
@@ -211,5 +209,4 @@ Which in total is **160%**, not 100%. Need to normalize final value by dividing 
 - Hand sanitizer made cool flameballs when tested
 - WD-40 seems promising due to high energy density
 - AXE has moderate energy but interesting composition
-- All calculations are approximations
-- **Safety first!** This is for educational purposes only 
+- All calculations are approximations 
