@@ -1,31 +1,37 @@
 # 6/24 Flamethrower Project: Energy Content of Cleaning Solutions & Household Fuels
 
-## Goal
+## 🎯 Goal
 
 The goal is to make a flamethrower out of some kind of **"cleaning solution."**  
 I should be able to add other stuff like WD-40, maybe even AXE bc funnies.
 
 Some flammable stuff that is cool includes:
-- Hand sanitizer → when I tested it, it made cool flameballs.
-- WD-40 → seems like it's good.
-- I also want to test how AXE performs.
+- **Hand sanitizer** → when I tested it, it made cool flameballs
+- **WD-40** → seems like it's good
+- **AXE Body Spray** → want to test how it performs
 
 To do this, I want to understand how the fire works.
 
-## 🔬 Initial Chemistry
+## 🔬 Initial Chemistry Approach
 
 ### Basic Combustion Reaction:
+```
 CH₄ (g) + 2 O₂ (g) → CO₂ (g) + 2 H₂O (g)
-
+```
 
 The original idea was to compare how much **methane (CH₄)** is present per dollar and per gram in these fuels.  
-After further research, this wasn’t useful — most of these fuels don’t contain methane directly.
+After further research, this wasn't useful — most of these fuels don't contain methane directly.
+
+### General Hydrocarbon Combustion:
+```
+CₓHᵧ + (x + y/4) O₂ → x CO₂ + (y/2) H₂O
+```
 
 ---
 
-## 📈 New Approach: Use Energy Content (MJ/kg)
+## 📈 New Approach: Energy Content (MJ/kg)
 
-I will now compare the **chemical energy content** of each fuel source (in MJ/kg), and eventually determine **how much energy you get per dollar** ($/MJ).
+Instead of trying to calculate methane content, I will now compare the **chemical energy content** of each fuel source (in MJ/kg), and eventually determine **how much energy you get per dollar** ($/MJ).
 
 The idea is to see whether this project is practical by comparing **energy density** and **cost-efficiency**.
 
@@ -34,51 +40,64 @@ The idea is to see whether this project is practical by comparing **energy densi
 ## 🧪 Fuel Energy Content Research
 
 ### 1. Methane (CH₄)
-- Enthalpy of combustion (ΔH°c): −890 kJ/mol  
-- Molar mass: 16 g/mol
+- **Enthalpy of combustion (ΔH°c):** −890 kJ/mol  
+- **Molar mass:** 16 g/mol
 
-**Calculation:** Energy per kg = 890 kJ/mol ÷ 0.016 kg/mol = 55,625 kJ/kg ≈ 55.6 MJ/kg
+**Calculation:** 
+```
+Energy per kg = 890 kJ/mol ÷ 0.016 kg/mol = 55,625 kJ/kg ≈ 55.6 MJ/kg
+```
 
+**Result:** **~55.6 MJ/kg**
 
 ---
 
 ### 2. Kerosene
-> Source: https://en.wikipedia.org/wiki/Kerosene
+> **Source:** [Wikipedia - Kerosene](https://en.wikipedia.org/wiki/Kerosene)
 
-- Lower Heating Value (LHV): **43.1 MJ/kg**
-- Higher Heating Value (HHV): 46.2 MJ/kg
+- **Lower Heating Value (LHV):** **43.1 MJ/kg**
+- **Higher Heating Value (HHV):** 46.2 MJ/kg
 
 I will use **LHV = 43.1 MJ/kg** since it represents net energy after water remains as vapor.
+
+**Result:** **43.1 MJ/kg**
 
 ---
 
 ### 3. Diesel
-> Source: https://www.iru.org/system/files/Diesel%20Litre%20Equivalent%20(DLE).pdf
+> **Source:** [IRU - Diesel Litre Equivalent](https://www.iru.org/system/files/Diesel%20Litre%20Equivalent%20(DLE).pdf)
 
-- Lower Heating Value (LHV): **43.0 MJ/kg**
+- **Lower Heating Value (LHV):** **43.0 MJ/kg**
+
+**Result:** **43.0 MJ/kg**
 
 ---
 
 ### 4. Ethanol
-> Source: https://www.engineeringtoolbox.com/standard-heat-of-combustion-energy-content-d_1987.html
+> **Source:** [Engineering Toolbox - Heat of Combustion](https://www.engineeringtoolbox.com/standard-heat-of-combustion-energy-content-d_1987.html)
 
-- ΔH°c = 1366.91 kJ/mol
-- Molar mass = 48.08 g/mol
+- **ΔH°c =** 1366.91 kJ/mol
+- **Molar mass =** 48.08 g/mol
 
-**Calculation:** (1366.91 × 1000) ÷ 48.08 = 28,435 kJ/kg ≈ 29.7 MJ/kg
+**Calculation:** 
+```
+(1366.91 × 1000) ÷ 48.08 = 28,435 kJ/kg ≈ 29.7 MJ/kg
+```
 
+**Result:** **29.7 MJ/kg**
 
 ---
 
 ### 5. WD-40
-> Source: https://www.wd40.com/myths-legends-fun-facts/
+> **Source:** [WD-40 Myths & Legends](https://www.wd40.com/myths-legends-fun-facts/)
 
 WD-40 contains **petroleum distillates**, which are similar in energy to **kerosene**.
 
-⚠️ No official energy content data available.
+⚠️ **Note:** No official energy content data available.
 
-**Assumption:** WD-40 ≈ 43.1 MJ/kg 
+**Assumption:** WD-40 ≈ 43.1 MJ/kg (same as kerosene)
 
+**Result:** **~43.1 MJ/kg**
 
 ---
 
@@ -86,171 +105,95 @@ WD-40 contains **petroleum distillates**, which are similar in energy to **keros
 
 AXE contains a mixture of flammable ingredients, but no published energy content exists.  
 To estimate, I used the MSDS here:  
-https://www.whatsinproducts.com/files/brands_pdf/9618_21010028%20MSDS%20Axe%20Proximity%20Deodorant%20Bodyspray,%20Bergamot.pdf
+[AXE Proximity Deodorant Bodyspray MSDS](https://www.whatsinproducts.com/files/brands_pdf/9618_21010028%20MSDS%20Axe%20Proximity%20Deodorant%20Bodyspray,%20Bergamot.pdf)
 
 #### Ingredient Composition (Approx. Averages):
-- Alcohol Denat. (SD Alcohol 40-B): 52.5%
-- Isobutane: 35%
-- Butane: 35%
-- Hydrofluorocarbon 152a: 30%
-- Propane: 7.5%
+- **Alcohol Denat. (SD Alcohol 40-B):** 52.5%
+- **Isobutane:** 35%
+- **Butane:** 35%
+- **Hydrofluorocarbon 152a:** 30%
+- **Propane:** 7.5%
 
-⚠️ Total is **160%**, not 100% → normalize final value by dividing total energy by 1.6
+⚠️ **Important:** Total is **160%**, not 100% → normalize final value by dividing total energy by 1.6
 
 ---
 
 ### 🔢 AXE Body Spray Energy Breakdown
 
 #### Propane (7.5%)
-> Source: https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF 0.075 × 46.4 = 3.48 MJ/kg
+> **Source:** [NIST WebBook - Propane](https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF)
 
+- **ΔcH°gas:** -2219.2 ± 0.46 kJ/mol
+- **Molar mass:** 44.0956 g/mol
+- **Energy content:** 46.4 MJ/kg (net value)
+
+**Calculation:** `0.075 × 46.4 = 3.48 MJ/kg`
+
+#### Hydrofluorocarbon-152a (30%)
+> **Assumed energy content:** ~16.5 MJ/kg
+
+**Calculation:** `0.30 × 16.5 = 4.95 MJ/kg`
+
+#### Butane (35%)
+> **Energy content:** 45.7 MJ/kg (net value from standard fuel tables)
+
+**Calculation:** `0.35 × 45.7 = 15.995 MJ/kg`
+
+#### Isobutane (35%)
+> **Energy content:** 45.6 MJ/kg
+
+**Calculation:** `0.35 × 45.6 = 15.96 MJ/kg`
+
+#### Alcohol Denat. (52.5%)
+> **Energy content:** ~30 MJ/kg (estimated for denatured alcohol)
+
+**Calculation:** `0.525 × 30 = 15.75 MJ/kg`
 
 ---
 
-#### Hydrofluorocarbon-152a (30%)
-> Assumed ~16.5 MJ/kg
+### 📊 AXE Body Spray Total Energy Calculation
 
-0.30 × 16.5 = 4.95 MJ/kg
+1. **Add all component energies:**
+   ```
+   3.48 + 4.95 + 15.995 + 15.96 + 15.75 = 56.135 MJ/kg
+   ```
 
+2. **Normalize by total percentage (160% = 1.6):**
+   ```
+   56.135 ÷ 1.6 = 35.08 MJ/kg
+   ```
 
+**Final Result:** **~35.1 MJ/kg**
 
+---
 
+## 📋 Summary of Energy Contents
 
+| Fuel | Energy Content (MJ/kg) | Notes |
+|------|----------------------|-------|
+| Methane | 55.6 | Highest energy density |
+| Kerosene | 43.1 | Standard reference |
+| Diesel | 43.0 | Similar to kerosene |
+| WD-40 | ~43.1 | Estimated (petroleum distillates) |
+| AXE Body Spray | ~35.1 | Calculated from components |
+| Ethanol | 29.7 | Lowest of tested fuels |
 
+---
 
-6/24 
+## 🔍 Next Steps
 
-the goal is to make a flamethrower out of some "cleaning solution".
+1. **Cost Analysis:** Calculate $/MJ for each fuel
+2. **Safety Testing:** Verify flammability and burn characteristics
+3. **Practical Testing:** Build and test flamethrower prototypes
+4. **Performance Comparison:** Evaluate flame quality, duration, and safety
 
-I should be able to add other stuff like wd40 maybe cuX WHY NOT 
+---
 
-stuff flamable that is cool is hand sanatizer when I did it cool flameballs
-wd40 seems like its good
-wanna see how axe does tho
-for that, I wanna understand how the fire would work.
+## 📝 Notes
 
-since CH₄ (g) + 2 O₂ (g) → CO₂ (g) + 2 H₂O (g), the idea is to see what has more CH₄ per dollar and per gram. 
-
-after further research, thisd isnt entirely good fgor my purpose since methane is not present in ther other chems. Instead I will use approximations of Energy (MJ/kg)
-How much chemical energy is in each fuel source.
-
-How much you pay per unit of that energy ($/MJ).
-
-The idea is to se if this project is practical.
-
-
-1. Methane (CH₄) → ~55.5 MJ/kg
-Calculation:
-Methane’s combustion reaction:
-CH₄ + 2 O₂ → CO₂ + 2 H₂O + Energy
-The enthalpy of combustion (ΔH°c) for methane is −890 kJ/mol.
-
-Molar mass of CH₄ = 16 g/mol
-
-Energy per kg = (890 kJ/mol) / (0.016 kg/mol) = 55,625 kJ/kg ≈ 55.6 MJ/kg
-
-
-
-CxHy + (x + y/4) O₂ → x CO₂ + (y/2) H₂O
-
-acc nvm ill just do it like this
-
-Instead of trying to calculate it ive been trying for hours without good results, ill just see what other sources say 
-
-https://en.wikipedia.org/wiki/Kerosene the footnote source is paid for access but "The heat of combustion of kerosene is similar to that of diesel fuel; its lower heating value is 43.1 MJ/kg (around 18,500 Btu/lb), and its higher heating value is 46.2 MJ/kg (19,900 Btu/lb).[15]"
-
-Since The lower heating value (LHV) of 43.1 MJ/kg represents the net energy released when the water produced during combustion remains as vapor, I will consider the MJ/KG as 43.1.
-https://www.iru.org/system/files/Diesel%20Litre%20Equivalent%20(DLE).pdf#:~:text=LD%20%3D%2043MJ%2Fkg%20for%20diesel according to this, the MJ/kg of desiel is 43MJ/kg
-
-https://www.engineeringtoolbox.com/standard-heat-of-combustion-energy-content-d_1987.html For ethonal, "The heat of combustion of ethanol, ΔHc °(C2H6 O, l) = 1366.91(kJ/mol) ×1000(g/kg) / 48.08 (g/mol) = 29664 kJ/kg ethanol  = 29.7 MJ/kg = 12754 BTU/lb = 7086 kcal/kg"
-
-For WP40, this remains very tricky; no tests weer dont and the chemical composition is nto aviabable anywhere. I searched for hours and this took a majority of my research time. However, as per https://www.wd40.com/myths-legends-fun-facts/, " WD-40 Multi-Use Product contains petroleum distillates "
-For that reason, ill asssociate it with kerosenes: [fill in]
-
-Unfortunatly, for Axe Body Spray, Personal care products lack energy content testing. Flammable propellants (e.g., butane: ~49 MJ/kg) contribute to combustion risk but are not quantified for the mixture. https://www.whatsinproducts.com/files/brands_pdf/9618_21010028%20MSDS%20Axe%20Proximity%20Deodorant%20Bodyspray,%20Bergamot.pdf has a list of these, which allow me to calculate that since - Alcohol Denat. (SD Alcohol 40-B): 40–65%
-- Isobutane: 30–40%
-- Butane: 30–40%
-- Hydrofluorocarbon 152a: 20–40%
-- Propane: 5–10%
-
-averages of this would be 7.5 propane, 30 percent - Hydrofluorocarbon 152a, - Butane 35 percent, Isobutane 35 percent, and 52.5 for - Alcohol Denat. (SD Alcohol 40-B), which in total is  160%, not 100$. 
-
-Propane: 
-0.075
-×
-46.4 (https://webbook.nist.gov/cgi/cbook.cgi?ID=C74986&Mask=FFF hasΔcH°gas	-2219.2 ± 0.46	kJ/mol	Ccb	Pittam and Pilcher, 1972	Corresponding ΔfHºgas = -104.7 kJ/mol (simple calculation by NIST; no Washburn corrections); ALS, the most updated one. 2219.2kJ/mol/44.0956g/mol×1000g/kg=50,364kJ/kg=50.4MJ/kg44.0956g/mol2219.2kJ/mol×1000g/kg=50,364kJ/kg=50.4MJ/kg )
-=
-3.48
-0.075×46.4=3.48
-
-HFC-152a: 
-0.30
-×
-16.5 (
-=
-4.95
-0.30×16.5=4.95
-
-Butane: 
-0.35
-×
-45.7 (2219
- 
-kJ/mol
-44.1
- 
-g/mol
-×
-1000
- 
-g/kg
-=
-50.4
- 
-MJ/kg
-44.1g/mol
-2219kJ/mol
- ×1000g/kg=50.4MJ/kg (gross value; net value is about 46.4 MJ/kg, matching standard fuel tables).)
-=
-15.995
-0.35×45.7=15.995
-
-Isobutane: 
-0.35
-×
-45.6
-=
-15.96
-0.35×45.6=15.96
-
-Alcohol Denat.: 
-0.525
-×
-30
-=
-15.75
-0.525×30=15.75
-2. Add all the results:
-
-3.48
-+
-4.95
-+
-15.995
-+
-15.96
-+
-15.75
-=
-56.135
-3.48+4.95+15.995+15.96+15.75=56.135
-
-3. Divide by the total percentage (as a decimal):
-
-56.135
-/
-1.6
-=
-35.08
-56.135/1.6=35.08
+- **Hand sanitizer** showed promising results with "cool flameballs"
+- **WD-40** appears to be a good candidate due to high energy density
+- **AXE Body Spray** has moderate energy content but may have interesting burn characteristics
+- All calculations are approximations and should be verified experimentally
+- **Safety first:** This is for educational/research purposes only
 
