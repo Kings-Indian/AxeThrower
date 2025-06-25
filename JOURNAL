@@ -25,69 +25,6 @@ After further research, this isn't entirely good for my purpose since methane is
 
 The idea is to see if this project is practical.
 
-## Fuel Pricing Analysis
-
-### Price Calculations
-
-#### 1. Methane
-**Price:** "NA, where am I getting methane :skull:"
-**Notes:** Not readily available for retail purchase
-
-#### 2. Kerosene
-**Source:** [Klean-Strip Green Kerosene on Amazon](https://www.amazon.com/Klean-Strip-Green-GKKH99991-Klean-1-Gallon/dp/B00CP71MZ8/ref=sr_1_6?crid=26GF7WDQ5874L&dib=eyJ2IjoiMSJ9.IE3xY7yXIg-eBn_c3pkx9KHWaOpkHpodqkw2Szf1Ag-Ir5OsprvlDMYfFoxdKNLDfKz1rD6KyyxB66WTjVeScsjubLerb5yFvZt_z8ULQs5JvkFNdIkiQK91dig9NDCl3Q07MxGwZ6hUyjVIDonWQTXAd0K9b3qk6EiEqugioZkaHhV3AKQRk3N4AlQhOe8rNXUqDhcRjdqJGyr-GDpuuIZnVBtSMosvkcPguKNJH_dJ7rQBH6b5U8SdbHbNZAsi0cSqRcHyFJdr-99OogUajVRoOlyjuCsvE8_2xpQpXIw.o_2y_Sf5a38mQqrNJILZW98Df18u95N4mJkizCeSW2U&dib_tag=se&keywords=Kerosene&qid=1750816096&sprefix=kerosene%2Caps%2C143&sr=8-6&th=1)
-
-**Calculation:**
-- 1 gallon ≈ 3.03 kg
-- Price: $15.97 for 1 gallon
-- Price per kg: $15.97 ÷ 3.03 kg = **$5.27 per kg**
-
-#### 3. Diesel
-**Price:** "Can't seem to find diesel retailing online"
-**Notes:** Not readily available for retail purchase
-
-#### 4. Ethanol
-**Source:** [Amazon Brand Rubbing Alcohol on Amazon](https://www.amazon.com/Amazon-Brand-Rubbing-Alcohol-Antiseptic/dp/B07RB7XYQ1/ref=sr_1_3?crid=3HGUHITAJWTCW&dib=eyJ2IjoiMSJ9.BIvb0l6-kq4YkImzsY0m0Xr2XUSh4FXcNn1oMI_RmMMx1NukqRbY5zcYqwuMa7fZ8-EkdQGtqfckjI3iENo1-q_bnhuOc2-7Us362vuZlC699xsDHdZL9GbL4Uj1Cv3bAC1zqna4uzT88qQE3crKnwgxycESVHRSSs-W3uT_-Wuyvm9m4hj1_M97SR7hiIsySYwP61R-pHEZNHUDehpZameiBH4T-2QlBn5yfWaBfbI.ghiiPG49_HCII5D4Oar-7lF82YNPTvxNoV_9_HUFStQ&dib_tag=se&keywords=Ethanol&qid=1750816308&rdc=1&sprefix=ethanol%2Caps%2C128&sr=8-3&th=1)
-
-**Calculation:**
-- 16 fl oz of ethanol weighs approximately 0.373 kg
-- Price: $7.71 for 16 fl oz
-- Price per kg: $7.71 × (1/0.373) = **$20.67 per kg**
-
-#### 5. AXE Body Spray
-**Source:** [AXE Deodorant on Amazon](https://www.amazon.com/AXE-Deodorant-Long-Lasting-Protection-Formulated/dp/B01N4LKLEX/ref=sr_1_1?crid=2R3KPB6AGFJYE&dib=eyJ2IjoiMSJ9.6Q7BsTVohI_lldHpzdBUBvb-Mj9hsBVN914n84Dc9GLQh4l0IAi4wbpCmFiDEZuAF5wX8jzmPNRVrDCLSbHcV6xPItqzAND9ckmSp5W3NmuYC_aHZA9myCjMQsFmojsTGFm15p7gaU92YiBUnBojeot2KXwnPPA3ZcXaYUDC63YoE2sKCTJmxIEpNRWchlUt5p9diivcm3U3dw8SLPMLjAxZ3mawyRkhkRmXCw-3wJy4RBdvvHWMJKVewe0gkjsbV6nNwMIWrJwSkxQTnotreWnulLlAYsdM_GumDFvykhg.ceTBCA4aCUGCGjsld_H50lX-siX5wBZZXcNBCFZhFiM&dib_tag=se&keywords=axe+spray&qid=1750816608&sprefix=axe+s%2Caps%2C132&sr=8-1)
-
-**Calculation:**
-- 4 packs of 113 grams each = 452 grams total
-- Price: $14.95 for 452 grams
-- Convert to kg: 452 g = 0.452 kg
-- Price per kg: $14.95 ÷ 0.452 kg = **$33.09 per kg**
-
-#### 6. WD-40
-**Source:** [WD-40 on Amazon](https://www.amazon.com/WD-40-Specialist-Professional-Grade-Lubricant/dp/B00CP71MZ8/)
-
-**Calculation:**
-- 311 g can costs $7.98
-- To find price per kg: (1000 g ÷ 311 g) × $7.98
-- 1000 ÷ 311 ≈ 3.215
-- Price per kg: 3.215 × $7.98 = **$25.65 per kg**
-
-### Cost-Effectiveness Analysis
-
-| Fuel | Energy Content (MJ/kg) | Price ($/kg) | Cost per MJ ($/MJ) | Notes |
-|------|----------------------|--------------|-------------------|-------|
-| Methane | 55.6 | NA | NA | Not available retail |
-| Kerosene | 43.1 | $5.27 | $0.122 | **Most cost-effective** |
-| Diesel | 43.0 | NA | NA | Not available retail |
-| WD-40 | ~43.1 | $25.65 | $0.595 | Expensive but convenient |
-| AXE Body Spray | ~35.1 | $33.09 | $0.943 | **Most expensive per MJ** |
-| Ethanol | 29.7 | $20.67 | $0.696 | Moderate cost |
-
-**Key Findings:**
-- **Kerosene** is the most cost-effective at $0.122 per MJ
-- **AXE Body Spray** is the most expensive at $0.943 per MJ (7.7x more expensive than kerosene)
-- **WD-40** is moderately expensive but more convenient than kerosene
-- **Ethanol** is in the middle range for cost-effectiveness
-
 ## General Hydrocarbon Combustion
 
 ```
@@ -257,10 +194,4 @@ Which in total is **160%**, not 100%. Need to normalize final value by dividing 
 | Ethanol | 29.7 | Lowest of tested fuels, useful since if it worked with the fireballs I should be OK with AXE! |
 
 ---
-Time Taken: 3 Hours
-
----
-Now I begin my design, revolving around the following goals/ideas:
-1. I can make "axe "
-
 
