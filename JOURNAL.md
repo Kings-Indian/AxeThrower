@@ -30,8 +30,7 @@ The idea is to see if this project is practical.
 ### Price Calculations
 
 #### 1. Methane
-**Price:** "NA, where am I getting methane :skull:"
-**Notes:** Not readily available for retail purchase
+**Price:** NA, where am I getting methane :skull:
 
 #### 2. Kerosene
 **Source:** [Klean-Strip Green Kerosene on Amazon](https://www.amazon.com/Klean-Strip-Green-GKKH99991-Klean-1-Gallon/dp/B00CP71MZ8/ref=sr_1_6?crid=26GF7WDQ5874L&dib=eyJ2IjoiMSJ9.IE3xY7yXIg-eBn_c3pkx9KHWaOpkHpodqkw2Szf1Ag-Ir5OsprvlDMYfFoxdKNLDfKz1rD6KyyxB66WTjVeScsjubLerb5yFvZt_z8ULQs5JvkFNdIkiQK91dig9NDCl3Q07MxGwZ6hUyjVIDonWQTXAd0K9b3qk6EiEqugioZkaHhV3AKQRk3N4AlQhOe8rNXUqDhcRjdqJGyr-GDpuuIZnVBtSMosvkcPguKNJH_dJ7rQBH6b5U8SdbHbNZAsi0cSqRcHyFJdr-99OogUajVRoOlyjuCsvE8_2xpQpXIw.o_2y_Sf5a38mQqrNJILZW98Df18u95N4mJkizCeSW2U&dib_tag=se&keywords=Kerosene&qid=1750816096&sprefix=kerosene%2Caps%2C143&sr=8-6&th=1)
